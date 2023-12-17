@@ -5,9 +5,9 @@ train_reviews = data.review[:40000]
 test_reviews = data.review[40000:]
 
 # train sentiments
-train_sentiment = data.review[:40000]
+train_sentiment = data.sentiment[:40000]
 
-test_sentiment = data.review[40000:]
+test_sentiment = data.sentiment[40000:]
 
 #Count vectorizer for bag of words
 cv = CountVectorizer(min_df=0, max_df=1, binary = False, ngram_range = (1,3))
